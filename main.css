@@ -134,7 +134,7 @@ button {
         font-family: Georgia, 'Times New Roman', Times, serif;
         position: absolute;
         left: 50%;
-        top: 25px;
+        top: 15px;
         transform: translate(-50%, 0);
     }
 }

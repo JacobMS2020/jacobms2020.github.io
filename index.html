@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZCS</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>  
+    <style src></style>
+</head>
+
+<body>
+    <div class="website-name">
+        <a href="index.html">NZCS</a>
+    </div>
+
+    <div id="menu">
+        <a class="menu-item" style="text-decoration: underline;">Home</a>
+        <a class="menu-item" href="services.html">Services</a>
+    </div>
+    <button id="hamburger-menu" class="hamburger-menu">&#9776;</button>
+    <div id="mobile-menu">
+        <a style="text-decoration: underline;">Home</a>
+        <a href="services.html">Services</a>
+    </div>
+
+    <!--<a href="/login" class="login-button">Login</a>-->
+
+    <div id="centerText">
+        <h1>NZ Cloud</h1>
+        <h1>Services.</h1>
+    </div>
+
+</body>
+
+<script>
+    const hamburger = document.getElementById("hamburger-menu");
+    const mobile_menu = document.getElementById("mobile-menu");
+    var mobile_menu_open = false;
+
+    hamburger.addEventListener("click", () => {
+        if (mobile_menu_open) {
+            mobile_menu.style.display = "none";
+            hamburger.innerText = "\u2630";
+            mobile_menu_open = false;
+        } else {
+            mobile_menu.style.display = "block";
+            hamburger.innerText = "\u2716";
+            mobile_menu_open = true;
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,140 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: beige;
+}
+
+a {
+   color: burlywood; 
+    text-decoration: none;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.website-name {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.website-name>* {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+#menu {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translate(-50%, 0);
+}
+
+.menu-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: burlywood;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#mobile-title {
+    display: none;
+}
+
+.login-button {
+    position: absolute;
+    text-decoration: none;
+    right: 10px;
+    top: 15px;
+    background-color: burlywood;
+    border: 0px;
+    border-color: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+    color: saddlebrown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+    #menu {
+        display: none;
+    }
+
+    .website-name {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background-color: beige;
+        color: saddlebrown;
+        border: none;
+        font-size: 30px;
+    }
+
+    #mobile-menu {
+        display: none;
+        background-color: transparent;
+        color: burlywood;
+        position: absolute;
+        top: 40px;
+        left: 5px;
+        width: 150px;
+        height: 250px;
+        padding-left: 10px;
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #mobile-menu a {
+        display: block; 
+        margin-top: 15px;
+    }
+
+    #mobile-title {
+        display: flex;     
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        color: burlywood;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        left: 50%;
+        top: 25px;
+        transform: translate(-50%, 0);
+    }
+}

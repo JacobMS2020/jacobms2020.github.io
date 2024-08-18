@@ -123,3 +123,75 @@ ul li:hover {
         display: block;
     }
 }
+
+#section1 {
+    display: flex;
+    flex-direction: column;   
+    padding: 10px;
+    margin: 20px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#section1 h1 {
+    font-size: 60px;
+    color: saddlebrown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+#section1 p {
+    font-size: 20px;
+    color: saddlebrown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+#section1 a {
+    font-size: 20px;
+    color: burlywood;
+    text-decoration: underline;
+}
+
+#section2 {
+    display: flex;   
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.s2o {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.s2o img {
+    display: block;
+    max-width: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.s2o a {
+    color: saddlebrown;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.s2o p {
+    color: saddlebrown;
+    font-size: 15px;
+}
+
+.s2o:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
